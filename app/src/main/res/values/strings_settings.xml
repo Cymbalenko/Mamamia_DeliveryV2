@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="pref_header_server">Настройки сервера</string>
+    <string name="pref_header_driver">Настройки водителя</string>
+    <string name="pref_title_server_address">Адрес Сервера</string>
+    <string name="pref_title_server_port">Порт Сервера</string>
+    <string name="pref_title_server_directory">Директория Сервера</string>
+    <string name="pref_title_server_login">Логин для доступа</string>
+    <string name="pref_title_server_password">Пароль для доступа</string>
+    <string name="pref_title_restaurant_name">Ресторан</string>
+    <string name="pref_title_driver_id">Водитель(ID)</string>
+    <string-array name="select_by">
+        <item>By Restaurant No</item>
+        <item>By Driver ID</item>
+    </string-array>
+    <string-array name="restaurant_list">
+        <item>MPS01</item>
+        <item>MPS02</item>
+        <item>MPS03</item>
+        <item>MPS04</item>
+        <item>MPS05</item>
+        <item>MPS06</item>
+        <item>MPS07</item>
+        <item>MPS08</item>
+        <item>MPS09</item>
+        <item>MPS12</item>
+        <item>MPS14</item>
+        <item>MPS15</item>
+        <item>MPS16</item>
+        <item>MPS17</item>
+        <item>MPS18</item>
+        <item>MPS19</item>
+        <item>MPS20</item>
+    </string-array>
+    <string name="pref_default_server_address">62.80.175.118</string>
+    <string name="pref_spare_server_address">62.80.175.118</string>
+    <string name="pref_default_server_port">7060</string>
+    <string name="pref_default_instance">DynamicsNAV90</string>
+    <string name="pref_default_companyname">WWW</string>
+    <string name="pref_default_login">www</string>
+    <string name="pref_default_password">W2aFmMA8sa9</string>
+    <string name="pref_default_select_by">By Restaurant No</string>
+    <string name="pref_default_driver">1111</string>
+    <string name="pref_default_restaurant">MPS06</string>
+    <string name="pref_default_redirect">WWW_MPS06</string>
+    <string name="pref_default_redirect_user">www</string>
+    <string name="pref_default_redirect_key"></string>
+    <string name="pref_default_url_to_update">http://mamamia.in.ua/app/MamamiaDeliveryApp/releases/</string>
+</resources>

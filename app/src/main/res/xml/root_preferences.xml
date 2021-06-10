@@ -1,0 +1,157 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:key="server"
+        android:title="@string/pref_header_server">
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_server_address"
+            android:inputType="textUri"
+            android:key="address"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_server_address" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_server_port"
+            android:inputType="text|number"
+            android:key="port"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_server_port" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_instance"
+            android:inputType="text"
+            android:key="instance"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Инстанс Сервера" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_companyname"
+            android:inputType="text"
+            android:key="companyname"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Название подразделения" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_login"
+            android:inputType="text"
+            android:key="login"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_server_login" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_password"
+            android:inputType="textPassword"
+            android:key="password"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_server_password" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_driver"
+        android:title="@string/pref_header_driver">
+
+        <ListPreference
+            android:defaultValue="@string/pref_default_select_by"
+            android:entries="@array/select_by"
+            android:entryValues="@array/select_by"
+            android:key="select_by"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="Фильтровать по" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_driver"
+            android:inputType="text|number"
+            android:key="driver"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_driver_id" />
+
+        <ListPreference
+            android:defaultValue="@string/pref_default_restaurant"
+            android:entries="@array/restaurant_list"
+            android:entryValues="@array/restaurant_list"
+            android:key="restaurant"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_restaurant_name" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="redirect_options"
+        android:title="Переадресация запроса">
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_redirect"
+            android:inputType="text"
+            android:key="redirect"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Локация переадресации" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_redirect_user"
+            android:inputType="text"
+            android:key="redirect_user"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Пользователь редиректа" />
+
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_redirect_key"
+            android:inputType="text"
+            android:key="redirect_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Ключ редиректа" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_additional"
+        android:title="Дополнительно">
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_url_to_update"
+            android:inputType="textUri"
+            android:key="url_to_update"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Url для поиска обновлений" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

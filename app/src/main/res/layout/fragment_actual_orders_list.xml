@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.actualorders.ActualOrdersFragment">
+
+    <Button
+        android:id="@+id/search_Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/Обновить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/purple_500"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view_actual"
+        app:layout_constraintEnd_toEndOf="@+id/search_Button"
+
+
+        app:layout_constraintStart_toStartOf="@+id/search_Button" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_actual"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_Button"
+        tools:listitem="@layout/fragment_actual_orders_item" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
